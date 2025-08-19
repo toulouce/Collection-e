@@ -15,31 +15,34 @@ restart:
     case 'Y':
         goto game;
     case 'N':
-        exit(0);
+        goto exit;
     default:
         goto restart;
     }
 game:
-    char couleur[];
-    char nom[];
-    char beverage[];
+    char *couleur;
+    char *nom;
+    char *beverage;
     printf("\nLet's start shall we?\n");
 reprendre:
     printf("Enter a Colour: ");
-    scanf("%s", &couleur);
+    scanf("%s", couleur);
     printf("\nEnter a name: ");
-    scanf("%s", &nom);
+    scanf("%s", nom);
     printf("\nEnter a drink: ");
-    scanf("%s", &beverage);
+    scanf("%s", beverage);
     printf("%s spilled %s on his %s jacket\n and he is angry now\n", nom, beverage, couleur);
 reprendre1:    
     printf("Do you want to continue (Y/N): ");
-    scanf("%c" &continue);
-    toupper(continue);
-    if(continue == Y)
+    scanf("%c" &Continue);
+    toupper(Continue);
+    if(Continue == 'Y')
         goto reprendre;
-    else if(continue == N) break;
-    else goto reprendre1;
+    else if(Continue == 'N')
+        goto exit;
+    else
+         goto reprendre1;
+exit:
     return 0;
 }
             
