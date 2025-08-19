@@ -1,1 +1,3 @@
 # Collection-e
+Bunch of projects to practice...
+cuz practice makes it perfect right?
