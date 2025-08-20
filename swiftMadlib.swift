@@ -1,4 +1,5 @@
 //Swift Madlib
+import Foundation
 
 @main
 
