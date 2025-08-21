@@ -13,11 +13,10 @@ int main(void) {
   if(Continue == 'Y') {
   printf("Guess the number in between 1-100");
   int guess_count = 1;
+  int guess = 0;
   do {
-      int guess = 0;
       printf("Guess %c: ", guess_count);
       scanf(" %d", &guess);
-      if(guess == NULL) { printf("Please enter a valid number"); continue; }
       if(guess < num) printf("You guessed too low.");
       else if(guess > num) printf("You guessed too high.");
       else printf("You guessed correct!");
