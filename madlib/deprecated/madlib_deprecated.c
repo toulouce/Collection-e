@@ -1,4 +1,5 @@
 //Mad Libs Game.
+//WARNING DO NOT RUN IN ANY CASE UNLESS YOU WANT MEMORY LEAK!!!
 #include <stdio.h>
 #include <ctype.h>
 

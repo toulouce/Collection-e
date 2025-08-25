@@ -1,12 +1,13 @@
 //Swift Madlib
 import Foundation
 
-@main
-
 print("*** Madlibs Game in Swift ***")
-print("Enter a name: ", terminator:""); var nom = readLine()
-print("Enter a drink/beverage: ", terminator:""); var beverage = readLine()
-print("Enter a colour: ", terminator:""); var couleur = readLine()
+print("Enter a name: ", terminator:"")
+let nom = readLine() ?? "Clay"
+print("Enter a drink/beverage: ", terminator:"")
+let beverage = readLine() ?? "beer"
+print("Enter a colour: ", terminator:"")
+let couleur = readLine() ?? "chartreuse"
 print("\(nom) spilled \(beverage) on their \(couleur) jacket and they're furious now.")
 
                                                     
