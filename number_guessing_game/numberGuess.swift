@@ -7,7 +7,7 @@ var guess: Int = 0
 repeat {
   guessCount += 1
   print("Guess \(guessCount): ", terminator:"")
-  if let input = readline(), let inputnum = Int(input) {
+  if let input = readLine(), let inputnum = Int(input) {
       guess = inputnum
   } else {
       print("Please enter a valid number.")
