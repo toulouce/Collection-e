@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <ctype.h>
 
 int main(void) {
   srand(time(NULL));
@@ -10,16 +11,17 @@ int main(void) {
   char Continue;
   printf("Do you want to continue(Y/N): ");
   scanf(" %c", &Continue);
+  Continue = toupper(Continue);
   if(Continue == 'Y') {
-  printf("Guess the number in between 1-100");
+  printf("Guess the number in between 1-100\n");
   int guess_count = 1;
   int guess = 0;
   do {
-      printf("Guess %c: ", guess_count);
+      printf("Guess %d: ", guess_count);
       scanf(" %d", &guess);
-      if(guess < num) printf("You guessed too low.");
-      else if(guess > num) printf("You guessed too high.");
-      else printf("You guessed correct!");
+      if(guess < num) printf("You guessed too low.\n");
+      else if(guess > num) printf("You guessed too high.\n");
+      else printf("You guessed correct!\n");
     } while (guess != num);
    } else break; 
   }
