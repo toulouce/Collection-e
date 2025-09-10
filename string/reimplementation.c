@@ -9,11 +9,13 @@ size_t my_strlen(const char *str) {
       length++;
     return length;
 }
-void *my_strcpy(char *dest_str, const char *src){
+char *my_strcpy(char *dest_str, const char *src){
     char *ptr = dest_str;
     while(*src != '\0'){
         *dest_str++ = *src++;
     }
+    *dest_str = '\0';
+    return ptr;
 }
 void swap(int *a, int *b){
     int temp = 0;
@@ -23,5 +25,12 @@ void swap(int *a, int *b){
 }
 
 int main(void){
-    
+    char str[] = "hello";
+    char dest[6];
+    printf("%zu", my_strlen(str));
+    my_strcpy(dest, str);
+    printf("\n%s", dest);
+    int x = 4, y = 5;
+    swap(&x, &y);
+    printf("\n%d %d", x, y);
 }
