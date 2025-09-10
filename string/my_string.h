@@ -12,6 +12,8 @@ static inline void *my_strcpy(char *dest_str, const char *src){
     while(*src != '\0'){
         *dest_str++ = *src++;
     }
+    *dest_str = '\0';
+    return ptr;
 }
 static inline void swap(int *a, int *b){
     int temp = 0;
