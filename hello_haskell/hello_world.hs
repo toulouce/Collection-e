@@ -1,0 +1,4 @@
+module hello_world where
+main :: IO ()
+main = do
+putStrLn "Hello World!"
