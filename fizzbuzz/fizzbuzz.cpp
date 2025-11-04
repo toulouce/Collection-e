@@ -14,6 +14,6 @@ void fizzbuzz(T n) {
 int main() {
     int i = 0;
     std::cout << Enter a positive integer: ";
-    std:cin >> i;
+    std::cin >> i;
     fizzbuzz(i);  
 }
