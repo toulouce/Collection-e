@@ -16,3 +16,4 @@ int main() {
     std::cout << Enter a positive integer: ";
     std:cin >> i;
     fizzbuzz(i);  
+}
