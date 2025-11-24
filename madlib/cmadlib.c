@@ -11,7 +11,8 @@ int main(void) {
 	printf("MADLIB\n");
 	while(1) {
 		printf("Do you wish to proceed(Y/N): ");
-		scanf(" %c", &Continue);
+		fgets(&Continue, sizeof(char), stdin);
+		//IN CASE USER INPUTS A LOWERCASE
 		Continue = toupper(Continue);
 		if(Continue == 'N')
 			break; 

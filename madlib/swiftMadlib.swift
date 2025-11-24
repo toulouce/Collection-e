@@ -1,4 +1,4 @@
-//Swift Madlib
+//Swift Madlib game
 import Foundation
 
 print("*** Madlibs Game in Swift ***")
